@@ -1,10 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
+import {StyledBtn} from "./Components/Button.styled";
 
 
 function App() {
     return (
         <div className="App">
+            <Menu>
+                <ul>
+                    <li><a href="#">Menu item 1</a></li>
+                    <li><a href="#">Menu item 2</a></li>
+                    <li><a href="#">Menu item 3</a></li>
+                </ul>
+            </Menu>
             <Box>
                 <StyledBtn as={Link} href={'#'}>LinkComponent</StyledBtn>
                 <StyledBtn as={'a'} href={'#'}>Link</StyledBtn>
@@ -17,23 +25,7 @@ function App() {
 
 export default App;
 
-const StyledBtn = styled.button`
-    border: none;
-    background-color: #fb3f78;
-    padding: 10px 20px;
-    color: snow;
-    font-size: 2rem;
-    font-weight: 700;
 
-    &:hover {
-        background-color: #3577ad;
-    }
-
-    &:last-child {
-        background-color: #9ce550;
-    }
-
-`
 const Link = styled.a`
     color: #4983c3;
     font-size: 2rem;
@@ -56,4 +48,27 @@ const Box = styled.div`
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    button {
+        cursor: pointer;
+    }
+
+    ${Link} {
+        cursor: zoom-in;
+    }
+`
+const Menu = styled.nav`
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+
+        li > a {
+            color: red;
+        }
+
+        li + li {
+            margin-left: 20px;
+        }
+    }
 `
