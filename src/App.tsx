@@ -8,9 +8,9 @@ function App() {
     return (
         <div className="App">
             <Box>
-                <StyledBtn outlined color={'green'} fontSize={'30px'}>Лайк</StyledBtn>
-                <StyledBtn primary>Коммент</StyledBtn>
-                <StyledBtn outlined color={'blue'} fontSize={'30px'}>Подписка</StyledBtn>
+                <StyledBtn btnType={'outlined'} color={'blue'} fontSize={'30px'}>Лайк</StyledBtn>
+                <StyledBtn btnType={'primary'} active>Коммент</StyledBtn>
+                <StyledBtn btnType={'outlined'} color={'green'} fontSize={'30px'}>Лайк</StyledBtn>
             </Box>
         </div>
     );
