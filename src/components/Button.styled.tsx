@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {MyAnimation} from "../styles/animations/Animations";
 
 export const StyledBtn = styled.button`
     border: none;
@@ -16,5 +17,13 @@ export const StyledBtn = styled.button`
         background-color: #3577ad;
     }
 
+`
+export const SuperButton = styled(StyledBtn)`
+    border-radius: 5px;
+    background-color: #ffe869;
+    color: #363636;
 
+    &:hover {
+        animation: ${MyAnimation} 3s ease-in-out infinite;
+    }
 `

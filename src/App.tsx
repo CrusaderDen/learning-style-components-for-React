@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import {StyledBtn} from "./Components/Button.styled";
+import {StyledBtn, SuperButton} from "./components/Button.styled";
+import {Link} from "./components/Link.styled";
+import {Menu} from "./components/Menu.styled";
 
 
 function App() {
@@ -8,9 +10,9 @@ function App() {
         <div className="App">
             <Menu>
                 <ul>
-                    <li><a href="#">Menu item 1</a></li>
-                    <li><a href="#">Menu item 2</a></li>
-                    <li><a href="#">Menu item 3</a></li>
+                    <li><a href="https://mail.ru/" about={'_blank'}>Menu item 1</a></li>
+                    <li><a href="ya.ru">Menu item 2</a></li>
+                    <li><a href="mail.ru">Menu item 3</a></li>
                 </ul>
             </Menu>
             <Box>
@@ -24,22 +26,6 @@ function App() {
 }
 
 export default App;
-
-
-const Link = styled.a`
-    color: #4983c3;
-    font-size: 2rem;
-    font-weight: 700;
-    background-color: transparent;
-    padding: 0;
-`
-
-
-const SuperButton = styled(StyledBtn)`
-    border-radius: 5px;
-    background-color: #ffe869;
-    color: #363636;
-`
 
 
 const Box = styled.div`
@@ -56,19 +42,9 @@ const Box = styled.div`
     ${Link} {
         cursor: zoom-in;
     }
-`
-const Menu = styled.nav`
-    ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
 
-        li > a {
-            color: red;
-        }
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
 
-        li + li {
-            margin-left: 20px;
-        }
     }
 `
