@@ -12,20 +12,27 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
     border: none;
     background-color: ${props => props.color || '#fb3f78'};
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 20px 20px;
+    min-width: 200px;
     color: snow;
-    font-size: ${props => props.fontSize};
+    font-size: ${props => props.fontSize || '2rem'};
     font-weight: 700;
+    transition: 0.5s all;
 
     &:hover {
-        background-color: #3577ad;
-        animation: ${MyAnimation} 3s ease-in-out infinite;;
+        transform: scale(1.2);
     }
 
     ${props => props.outlined && css<StyledBtnPropsType>`
         border: 2px solid ${props => props.color || '#fb3f78'};
         color: ${props => props.color || '#fb3f78'};
         background-color: transparent;
+
+        &:hover {
+            border-color: #ab9318;
+            color: yellow;
+            background-color: transparent;
+        }
     `}
 
     ${props => props.primary && css<StyledBtnPropsType>`
@@ -33,14 +40,4 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
         color: snow;
     `}
 
-
-
-`
-export const SuperButton = styled(StyledBtn)`
-    background-color: #ffe869;
-    color: #363636;
-
-    &:hover {
-        animation: ${MyAnimation} 3s ease-in-out infinite;
-    }
 `

@@ -8,12 +8,9 @@ function App() {
     return (
         <div className="App">
             <Box>
-                {/*<StyledBtn color={'red'} fontSize={"40px"}>Hello</StyledBtn>*/}
-                {/*<StyledBtn color={'green'} fontSize={"60px"}>Hello</StyledBtn>*/}
-                {/*<StyledBtn>MicroHello</StyledBtn>*/}
-                <StyledBtn outlined color={'green'}>MicroHello</StyledBtn>
-                <StyledBtn primary>MicroHello</StyledBtn>
-                <StyledBtn outlined color={'blue'}>MicroHello</StyledBtn>
+                <StyledBtn outlined color={'green'} fontSize={'30px'}>Лайк</StyledBtn>
+                <StyledBtn primary>Коммент</StyledBtn>
+                <StyledBtn outlined color={'blue'} fontSize={'30px'}>Подписка</StyledBtn>
             </Box>
         </div>
     );
@@ -27,7 +24,7 @@ const Box = styled.div`
     height: 100vh;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
 
     button {
         cursor: pointer;
