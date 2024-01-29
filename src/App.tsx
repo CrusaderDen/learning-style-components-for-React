@@ -2,15 +2,16 @@ import React from 'react';
 import styled from "styled-components";
 import {StyledBtn} from "./components/Button.styled";
 import {Link} from "./components/Link.styled";
+import {myTheme} from "./styles/Theme.styled";
 
 
 function App() {
     return (
         <div className="App">
             <Box>
-                <StyledBtn btnType={'outlined'} color={'blue'} fontSize={'30px'}>Лайк</StyledBtn>
+                <StyledBtn btnType={'outlined'} color={myTheme.colors.primary} fontSize={'30px'}>Лайк</StyledBtn>
                 <StyledBtn btnType={'primary'} active>Коммент</StyledBtn>
-                <StyledBtn btnType={'outlined'} color={'green'} fontSize={'30px'}>Лайк</StyledBtn>
+                <StyledBtn btnType={'outlined'} color={myTheme.colors.secondary} fontSize={'30px'}>Лайк</StyledBtn>
             </Box>
         </div>
     );
@@ -34,7 +35,7 @@ const Box = styled.div`
         cursor: zoom-in;
     }
 
-    @media screen and (max-width: 800px) {
+    @media ${myTheme.media.tablet} {
         flex-direction: column;
 
     }

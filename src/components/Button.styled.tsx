@@ -1,5 +1,4 @@
 import styled, {css} from "styled-components";
-import {MyAnimation} from "../styles/animations/Animations";
 
 type StyledBtnPropsType = {
     color?: string
@@ -30,8 +29,8 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
 
         &:hover {
             border-color: #ab9318;
-            color: yellow;
-            background-color: transparent;
+            color: green;
+            background-color: rgba(68, 67, 67, 0.57);
         }
     `}
 
@@ -41,10 +40,10 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
     `}
 
     ${props => props.active && css<StyledBtnPropsType>`
-        box-shadow: 0px 0px 5px 5px rgba(152, 139, 139, 0.51);
+        box-shadow: 0 0 5px 5px rgba(152, 139, 139, 0.51);
 
         &:hover {
-            box-shadow: 0px 0px 10px 15px rgba(152, 139, 139, 0.51);
+            box-shadow: 0 0 10px 15px rgba(152, 139, 139, 0.51);
         }
     `}
 
