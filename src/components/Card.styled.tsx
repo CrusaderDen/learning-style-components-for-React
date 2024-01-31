@@ -76,6 +76,6 @@ export const CardStyles = styled.div`
         font-size: 12px;
         font-weight: 500;
         line-height: 20px;
-        padding-left: 10px;
+        margin-left: 10px;
     }
 `
