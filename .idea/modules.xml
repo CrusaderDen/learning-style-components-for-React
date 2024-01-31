@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/learning-style-components-for-react.iml" filepath="$PROJECT_DIR$/.idea/learning-style-components-for-react.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../samurai-way-main/.idea/samurai-way-main.iml" filepath="$PROJECT_DIR$/../samurai-way-main/.idea/samurai-way-main.iml" />
     </modules>
   </component>
 </project>

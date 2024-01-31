@@ -61,11 +61,11 @@ export const CardBtn = styled.button<CardBtnStyledProps>`
 
 export const CardStyles = styled.div`
     max-width: 300px;
-    height: 350px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    row-gap: 20px;
     align-items: center;
     border-radius: 15px;
     background: #FFF;
@@ -77,5 +77,15 @@ export const CardStyles = styled.div`
         font-weight: 500;
         line-height: 20px;
         margin-left: 10px;
+        align-self: start;
+    }
+
+    img {
+        height: 170px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 10px;
+        box-shadow: 0 0 2px black;
     }
 `

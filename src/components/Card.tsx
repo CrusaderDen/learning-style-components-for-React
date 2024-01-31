@@ -7,7 +7,7 @@ export function Card(props: any) {
     return (
 
         <CardStyles>
-            <img src={desert} alt="desert"/>
+            <img src={props.imgSource} alt="desert"/>
             <CardTitle titleType={'strong'}>{props.titleText}</CardTitle>
             <p>{props.mainText}</p>
             <div>
