@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/learning-style-components-for-React/static/css/main.31d6cfe0.css",
+    "main.js": "/learning-style-components-for-React/static/js/main.6d6062dd.js",
+    "static/js/787.8e2e6d1d.chunk.js": "/learning-style-components-for-React/static/js/787.8e2e6d1d.chunk.js",
+    "index.html": "/learning-style-components-for-React/index.html",
+    "main.6d6062dd.js.map": "/learning-style-components-for-React/static/js/main.6d6062dd.js.map",
+    "787.8e2e6d1d.chunk.js.map": "/learning-style-components-for-React/static/js/787.8e2e6d1d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.6d6062dd.js"
+  ]
+}
