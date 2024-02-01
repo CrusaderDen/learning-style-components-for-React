@@ -60,13 +60,13 @@ export const CardBtn = styled.button<CardBtnStyledProps>`
 `
 
 export const CardStyles = styled.div`
-    max-width: 300px;
+    width: 300px;
     padding: 10px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
     row-gap: 20px;
-    align-items: center;
     border-radius: 15px;
     background: #FFF;
     box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.10);
@@ -84,7 +84,7 @@ export const CardStyles = styled.div`
         height: 170px;
         width: 100%;
         object-fit: cover;
-        object-position: top;
+        object-position: center;
         border-radius: 10px;
         box-shadow: 0 0 2px black;
     }
