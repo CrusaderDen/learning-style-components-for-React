@@ -1,5 +1,4 @@
 import {createGlobalStyle} from "styled-components";
-import {myTheme} from "./Theme.styled";
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -17,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
 
 
     body {
-        background-color: ${myTheme.colors.gray.dark};
+        background-color: #2a2a2a;
         font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;

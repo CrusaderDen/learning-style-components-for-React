@@ -1,4 +1,3 @@
-import desert from "../assets/desert.png";
 import React from "react";
 import {CardBtn, CardStyles, CardTitle} from "./Card.styled";
 

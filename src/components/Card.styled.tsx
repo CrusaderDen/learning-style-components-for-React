@@ -51,7 +51,6 @@ export const CardBtn = styled.button<CardBtnStyledProps>`
         background: #fff;
 
         &:hover {
-            background: #eeeeee;
             border: 2px solid #2140ce;
         }
     `}
